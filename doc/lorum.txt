@@ -1,0 +1,35 @@
+*lorum.txt*  Quickly show sample text
+
+Author:  Jonathan Brink
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                    *lorum*
+
+A very simple snippit plugin
+Each snippit (or "lorum") is stored in it's own file
+
+Lorums are searched for on the runtimepath
+recursively under directories called "lorums"
+
+Invoked using the "Lorum" command
+
+Usage:
+Lorum filename
+
+The passed-in filename needs to be within 'lorums' dir within vim-lorum directory
+
+Examples:
+Lorum "lorum.fill"
+Lorum "lorum.js"
+Lorum "lorum.pl"
+Lorum "lorum.txt"
+Lorum "mysnippet.txt"
+
+
+ABOUT                                           *lorum-about*
+
+Grab the latest version or report a bug on GitHub:
+
+https://github.com/jonbri/vim-lorum
+
+ vim:tw=78:et:ft=help:norl:
