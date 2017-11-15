@@ -1,0 +1,26 @@
+" Blank template for Vader testing
+" Invoke with `:Vader`
+" Resources:
+"   https://github.com/junegunn/vader.vim
+"   https://junegunn.kr/2013/10/testing-vimscript-with-vader-vim
+
+Before;
+function! FooBecomesBar()
+  :silent! %s/foo/bar/
+endfunction
+nnoremap c( :call FooBecomesBar()<CR>
+
+Given();
+foo()
+Do:
+  c(
+Expect;
+bar()
+
+
+Given();
+foo()
+Execute:
+  call FooBecomesBar()
+Expect;
+bar()

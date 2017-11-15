@@ -11,5 +11,6 @@ Lorum "lorum.fill"
 Lorum "lorum.js"
 Lorum "lorum.pl"
 Lorum "lorum.txt"
+Lorum "lorum.vader"
 Lorum "mysnippet.txt"
 ```
