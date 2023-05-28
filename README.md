@@ -9,6 +9,7 @@ Invocation Examples:
 ```
 Lorum "lorum.fill"
 Lorum "lorum.js"
+Lorum "lorum.jsx"
 Lorum "lorum.pl"
 Lorum "lorum.txt"
 Lorum "lorum.vader"

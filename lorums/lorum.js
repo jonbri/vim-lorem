@@ -1,31 +1,25 @@
-jQuery.sap.declare("lorum.app.viewer.ViewerListItem");
-jQuery.sap.require("lorum.m.StandardListItem");
+// take input from the user
+const lowerNumber = parseInt(prompt("Enter lower number: "));
+const higherNumber = parseInt(prompt("Enter higher number: "));
 
-sap.m.StandardListItem.extend("lorum.app.viewer.ViewerListItem", {
-    metadata: {
-        library: "lorum.app.viewer",
-        properties: {
-            uniqueId: { type: 'string' },
-            fullTitle: { type: 'string' }
-        }
-    },
-    renderer: "lorum.m.StandardListItemRenderer"
-});
+console.log(
+  `The prime numbers between ${lowerNumber} and ${higherNumber} are:`
+);
 
-lorum.app.viewer.ViewerListItem.prototype.onAfterRendering = function() {
-    var self = this,
-        $domRef = $(this.getDomRef()),
-        hasTouch = lorum.common.hasTouch();
+// looping from lowerNumber to higherNumber
+for (let i = lowerNumber; i <= higherNumber; i++) {
+  let flag = 0;
 
-    // for tooltip
-    $domRef.attr('title', this.getFullTitle());
-    if (this.getUniqueId()) {
-        $domRef.attr('data-lorum-uniqueId', this.getUniqueId());
+  // looping through 2 to user input number
+  for (let j = 2; j < i; j++) {
+    if (i % j == 0) {
+      flag = 1;
+      break;
     }
+  }
 
-    if (hasTouch) {
-        $domRef.bind('taphold', function(e) {
-            self.showTooltipPopup();
-        });
-    }
-};
+  // if number greater than 1 and not divisible by other numbers
+  if (i > 1 && flag == 0) {
+    console.log(i);
+  }
+}
