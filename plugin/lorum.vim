@@ -28,6 +28,7 @@ function! InvokeLorum(type)
     execute "read".g:targetFile
     redraw
     echom "read ".g:targetFile
+    :0d_
   endif
 endfunction
 
