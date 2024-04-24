@@ -1,17 +1,17 @@
-# vim-lorum
+# vim-lorem
 A very simple snippet plugin.
 
-Each snippet (or "lorum") is stored in it's own file. Lorums are searched for on the runtimepath recursively under directories named `lorums`.
+Each snippet (or "lorem") is stored in it's own file. Lorems are searched for on the runtimepath recursively under directories named `lorems`.
 
-Invoke with the `Lorum` command.
+Invoke with the `Lorem` command.
 
 Invocation Examples:
 ```
-Lorum "lorum.fill"
-Lorum "lorum.js"
-Lorum "lorum.jsx"
-Lorum "lorum.pl"
-Lorum "lorum.txt"
-Lorum "lorum.vader"
-Lorum "mysnippet.txt"
+Lorem "lorem.fill"
+Lorem "lorem.js"
+Lorem "lorem.jsx"
+Lorem "lorem.pl"
+Lorem "lorem.txt"
+Lorem "lorem.vader"
+Lorem "mysnippet.txt"
 ```
